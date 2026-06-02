@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef, useState } from 'react';
-import { ExternalLink, ShoppingCart, Shirt, Cpu, Brain, GraduationCap, Computer } from 'lucide-react';
+import { ExternalLink, ShoppingCart, Shirt, Brain, GraduationCap, Computer } from 'lucide-react';
 import { FaGithub } from "react-icons/fa";
 
 const projects = [

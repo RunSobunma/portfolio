@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Mail, Code2, Database, Smartphone } from 'lucide-react';
+import { Code2, Database, Smartphone } from 'lucide-react';
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
 import profilePic from '../../assets/images/profile.png';
 
