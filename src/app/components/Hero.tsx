@@ -84,7 +84,7 @@ export default function Hero() {
   className="
     absolute
     -bottom-3
-    -right-25
+    -right-17
     sm:-right-30
     px-5
     py-2
@@ -112,12 +112,13 @@ whileHover={{
   boxShadow: "0 0 35px rgba(139,92,246,0.6)",
 }}
 >
-  <p className="text-sm text-muted-foreground">
-    Hi, I'm
-  </p>
-  <h3 className="font-bold text-white tracking-wide ">
-    Run Sobunma
-  </h3>
+<p className="text-xs sm:text-sm text-muted-foreground">
+  Hi, I'm
+</p>
+
+<h3 className="font-bold text-sm sm:text-base md:text-lg text-white tracking-wide">
+  Run Sobunma
+</h3>
 </motion.div>
 </motion.div>
 
