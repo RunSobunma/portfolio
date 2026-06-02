@@ -39,14 +39,33 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMobileMenuOpen(false);
-    }
-  };
+  // const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  //   e.preventDefault();
+  //   const element = document.querySelector(href);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: 'smooth' });
+  //     setIsMobileMenuOpen(false);
+  //   }
+  // };
+const handleClick = (
+  e: React.MouseEvent<HTMLAnchorElement>,
+  href: string
+) => {
+  e.preventDefault();
+
+  const element = document.querySelector(href);
+
+  setIsMobileMenuOpen(false);
+
+  if (element) {
+    setTimeout(() => {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }, 200);
+  }
+};
 
   return (
     <motion.nav
