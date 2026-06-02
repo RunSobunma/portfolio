@@ -12,7 +12,7 @@ import ParticlesBackground from './components/ParticlesBackground';
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const { scrollYProgress } = useScroll();
-  const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
+  // const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 2000);
@@ -47,7 +47,7 @@ export default function App() {
   }
 
   return (
-    <div className="relative bg-background text-foreground overflow-hidden">
+    <div className="relative bg-background text-foreground overflow-x-hidden pt-[env(safe-area-inset-top)]">
       <ParticlesBackground />
       <Navbar />
 
