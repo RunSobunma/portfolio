@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 
 export default function ParticlesBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -84,9 +85,20 @@ export default function ParticlesBackground() {
   }, []);
 
   return (
-    <canvas
-      ref={canvasRef}
-      className="fixed inset-0 pointer-events-none opacity-30"
-    />
+    <>
+      <canvas ref={canvasRef} className="particles-background" />
+      <style>{`
+        .particles-background {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          opacity: 0.3;
+          z-index: -1;
+        }
+      `}</style>
+    </>
   );
 }
