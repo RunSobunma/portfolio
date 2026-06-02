@@ -12,7 +12,6 @@ import ParticlesBackground from './components/ParticlesBackground';
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const { scrollYProgress } = useScroll();
-  // const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 2000);
