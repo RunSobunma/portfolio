@@ -84,7 +84,7 @@ export default function Hero() {
   className="
     absolute
     -bottom-3
-    -right-17
+    -right-15
     sm:-right-30
     px-5
     py-2
