@@ -47,7 +47,7 @@ export default function App() {
   }
 
   return (
-    <div className="relative h-screen bg-background text-foreground overflow-x-hidden pt-[env(safe-area-inset-top)]">
+    <div className="relative h-100 bg-background text-foreground overflow-x-hidden pt-[env(safe-area-inset-top)]">
       <ParticlesBackground />
       <Navbar />
 
