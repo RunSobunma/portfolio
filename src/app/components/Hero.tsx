@@ -84,7 +84,8 @@ export default function Hero() {
   className="
     absolute
     -bottom-3
-    -right-30
+    -right-25
+    sm:-right-30
     px-5
     py-2
     rounded-2xl
@@ -114,7 +115,7 @@ whileHover={{
   <p className="text-sm text-muted-foreground">
     Hi, I'm
   </p>
-  <h3 className="font-bold text-white tracking-wide">
+  <h3 className="font-bold text-white tracking-wide ">
     Run Sobunma
   </h3>
 </motion.div>
