@@ -46,7 +46,7 @@ export default function App() {
   }
 
   return (
-    <div className="relative bg-background text-foreground overflow-x-hidden" style={{ height: '100vh' }}>
+    <div className="relative bg-background text-foreground overflow-x-hidden">
       <ParticlesBackground />
       <Navbar />
 
