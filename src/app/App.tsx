@@ -46,7 +46,7 @@ export default function App() {
   }
 
   return (
-    <div className="relative bg-background text-foreground overflow-x-hidden h-dvh">
+    <div className="relative bg-background text-foreground overflow-x-hidden min-h-dvh">
       <ParticlesBackground />
       <Navbar />
 
