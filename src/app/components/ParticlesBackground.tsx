@@ -86,7 +86,7 @@ export default function ParticlesBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed inset-0 pointer-events-none opacity-30"
+      className="fixed inset-0 pointer-events-none opacity-30 h-dvh"
     />
   );
 }   
